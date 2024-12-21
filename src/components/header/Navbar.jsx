@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <img
-              src="./images/navbar/logo.svg"
+              src="/images/navbar/logo.svg"
               alt="Logo"
               className="h-[8vh] object-contain"
             />

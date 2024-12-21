@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TrendingProductsSwipe from "../../../components/trendingProducts/TrendingProductsSwiper";
 
 const products = [
   {
@@ -87,7 +88,7 @@ export function ProductRange() {
 
   return (
     <div
-      className="flex relative flex-col items-center  py-14   mt-20 w-full h-fit max-md:mt-10 max-md:max-w-full"
+      className=" relative flex-col items-center  py-14   mt-20 w-full h-fit max-md:mt-10 max-md:max-w-full"
       style={{ background: "linear-gradient(to bottom, #f7faff, #deeefc)" }}
     >
       <div className="relative text-4xl font-semibold leading-snug text-center text-black">
@@ -106,10 +107,15 @@ export function ProductRange() {
           )}
         </div>
       </div>
-      <div className="relative self-stretch mt-16 px-[5vw] max-md:mt-10 max-md:max-w-full">
+      {/* <div className="relative self-stretch mt-16 px-[5vw] max-md:mt-10 max-md:max-w-full">
         <div className="grid grid-cols-4 gap-5 max-md:grid-col-2 max-sm:grid-cols-1 ">
           {products.map((product, index) => renderProductCard(product, index))}
         </div>
+      </div> */}
+
+      <div>
+
+      <TrendingProductsSwipe/>
       </div>
       <Link
         to=""
