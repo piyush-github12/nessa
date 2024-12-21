@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoEarthOutline } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 
@@ -55,10 +56,10 @@ const Navbar = () => {
             <div className="text-black ">
               Home
             </div>
-            <div className="text-black flex items-center gap-1">
+            <Link to="/solutions" className="text-black flex items-center gap-1">
               Solutions
               <IoIosArrowDown className="w-4 h-4 text-black" />
-            </div>
+            </Link>
             <div className="text-black flex items-center gap-1">
               Products
               <IoIosArrowDown className="w-4 h-4 text-black" />
