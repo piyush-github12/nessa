@@ -10,7 +10,7 @@ export default function TrendingProductsSwipe() {
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={10}
         pagination={{
           dynamicBullets:true,
@@ -21,6 +21,10 @@ export default function TrendingProductsSwipe() {
             clickable:true
         }}
         breakpoints={{
+          550:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -39,7 +43,7 @@ export default function TrendingProductsSwipe() {
       >
         {trendingProductData.map((product, index) => (
           <SwiperSlide key={index} className=" p-[20px] ">
-            <div className="h-[400px] mb-[40px]  p-[10px]  border-[2px] bg-white border-[#d6d0d0] ">
+            <div className="h-[400px] max-sm:flex max-sm:flex-col max-sm:items-center  mb-[40px]  p-[10px]  border-[2px] bg-white border-[#d6d0d0] ">
               <img
                 className=" mb-[10px] h-[70%] object-cover"
                 src={product.productImage}
