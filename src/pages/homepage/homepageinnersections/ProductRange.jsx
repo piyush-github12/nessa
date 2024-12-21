@@ -94,7 +94,9 @@ export function ProductRange() {
       <div className="relative text-4xl font-semibold leading-snug text-center text-black">
         Our <span className="text-blue-500">Product</span> Range
       </div>
-      <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
+      <div className="w-full flex justify-center">
+          <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
+        </div>
       <div className="relative mt-7 text-xl px-[5vw] leading-8 text-center text-zinc-900 max-md:max-w-full">
         At Nessa, we don't just offer off-the-shelf products; we design and
         manufacture lighting solutions that adapt precisely to your unique
@@ -117,12 +119,15 @@ export function ProductRange() {
 
       <TrendingProductsSwipe/>
       </div>
-      <Link
-        to=""
-        className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 mt-[50px] rounded-lg font-medium transition-colors"
-      >
-        View All Products
-      </Link>
+      <div className="w-full flex items-center justify-center">
+
+        <Link
+          to=""
+          className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 mt-[50px] rounded-lg font-medium transition-colors"
+        >
+          View All Products
+        </Link>
+      </div>
     </div>
   );
 }
