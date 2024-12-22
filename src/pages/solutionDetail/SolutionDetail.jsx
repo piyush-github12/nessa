@@ -11,7 +11,6 @@ const SolutionDetail = () => {
     (solution) => solution.heading.toLowerCase() === type.toLowerCase()
   ); // Find the object based on 'heading'
 
-  console.log(data);
 
   return (
     <div className="w-full overflow-hidden">
@@ -23,7 +22,9 @@ const SolutionDetail = () => {
           src={data.solutionDetail.heroposter} // dynamic poster
           alt=""
         />
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-blue-500 ml-[5vw] relative z-[2]">
+        {/* <div className="w-full h-full absolute bg-black opacity-50"></div> */ } {/* dark background image*/}
+
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white ml-[5vw] relative z-[2]">
           {/* dynamic heading */}
           {data.solutionDetail.heading}
         </h1>
@@ -46,7 +47,7 @@ const SolutionDetail = () => {
           </div>
         </div>
 
-        <div className="w-1/2 max-md:w-full max-md:h-[300px] bg-gray-900">
+        <div className="w-1/2 max-md:w-full max-md:h-[300px] bg-gray-500">
           <img className="w-full  bg-gray-600" src="" alt="" />
         </div>
       </div>
@@ -61,6 +62,23 @@ const SolutionDetail = () => {
         <div className="w-full flex justify-center">
           <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
         </div>
+      </div>
+
+      <div className="w-full  flex items-center justify-center gap-10 mt-[50px]">
+        {/* clients images path  */}
+        {[
+          "/images/homepageimages/partner1.png",
+          "/images/homepageimages/partner2.png",
+          "/images/homepageimages/partner3.png",
+          "/images/homepageimages/partner2.png",
+        ].map((image, index) => (
+          <img
+            key={index}
+            className="w-[80px] h-[80px] bg-gray-400 rounded-full mb-4"
+            src={image}
+            alt=""
+          />
+        ))}
       </div>
 
       {data.solutionDetail.relatedProducts.map((item, index) => (

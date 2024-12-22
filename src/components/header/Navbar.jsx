@@ -26,12 +26,12 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="flex  items-center bg-[#2672BE] rounded-full px-3 py-1">
+            <div className="flex max-sm:w-[170px] items-center bg-[#2672BE] rounded-full px-3 py-1">
               <CiSearch className="w-5 h-5 text-white" />
               <input
                 type="text"
                 placeholder="Search Product"
-                className="ml-2 outline-none bg-[#2672BE] text-white placeholder:text-[#ffffffe5] "
+                className="ml-2 max-sm:w-[120px]  outline-none bg-[#2672BE] text-white placeholder:text-[#ffffffe5] "
               />
             </div>
             <div className="flex items-center ml-4">
@@ -45,14 +45,14 @@ const Navbar = () => {
 
       <div className="bg-white p-4 px-[3vw] w-screen">
         <div className=" mx-auto flex justify-between items-center">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               src="/images/navbar/logo.svg"
               alt="Logo"
               className="h-[80px] w-[200px] object-contain"
             />
-          </div>
-          <div className="flex max-lg:hidden gap-[4vw] items-center">
+          </Link>
+          <div className="flex max-lg:hidden gap-[4vw] px-[30px] items-center">
             <Link to="/" className="text-black ">
               Home
             </Link>
@@ -75,9 +75,9 @@ const Navbar = () => {
               About Us
             </div>
           </div>
-          <button className="bg-[var(--primary-bg-color)] text-white px-4 py-2 rounded ml-8">
+          <Link to="/contactus" className="bg-[var(--primary-bg-color)] text-white px-4 py-2 rounded ml-8">
             Contact us
-          </button>
+          </Link>
         </div>
       </div>
     </div>

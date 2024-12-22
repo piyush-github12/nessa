@@ -2,21 +2,25 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 
 export default function PartnersReviewsSwiper() {
 
-  const [slidepre, setslidepre] = useState(window.innerWidth < 500 ? 1 : 3);
+
+  //  for Responsive design setting element Numbers to previewm
+  const [slidepre, setslidepre] = useState(window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3);
 
   useEffect(() => {
     const handleResize = () => {
-      setslidepre(window.innerWidth < 600 ? 1 : 3);
+      setslidepre(window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3);
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
 
   return (
     <div className="py-[50px] " style={{ background: "linear-gradient(to bottom, #f7faff, #deeefc)" }}>
@@ -47,7 +51,11 @@ export default function PartnersReviewsSwiper() {
           waitForTransition: true,
           enabled: false,
         }}
-       
+        navigation={{
+          clickable:true
+        }}
+         
+        // Animation starts only when element is in view
         onSwiper={(swiper) => {
           const observer = new IntersectionObserver(
             ([entry]) => {
@@ -61,19 +69,36 @@ export default function PartnersReviewsSwiper() {
           );
           observer.observe(swiper.el);
 
-          // Add mouse enter and leave event listeners
-          //  swiper.el.addEventListener('mouseenter', () => {
-          //   swiper.autoplay.stop(); 
-          // });
-          // swiper.el.addEventListener('mouseleave', () => {
-          //   swiper.autoplay.start(); 
-          // });
+          // It stops auto play on mouse enter
+          swiper.el.addEventListener('mouseenter', (e) => {
+            swiper.autoplay.stop(); 
+          });
+          swiper.el.addEventListener('mouseleave', (e) => {
+            swiper.autoplay.start(); 
+          });
+
+          //On hover scale transitionn
+          const svgElements = swiper.el.querySelectorAll('svg');
+          svgElements.forEach(svg => {
+            svg.addEventListener('mouseenter', () => {
+              swiper.autoplay.stop(); 
+              svg.style.transition = 'transform 0.2s ease-in-out'; 
+              svg.style.transform = 'scale(1.2)'; 
+            });
+            svg.addEventListener('mouseleave', () => {
+              swiper.autoplay.start(); 
+              svg.style.transition = 'transform 0.2s ease-in-out'; 
+              svg.style.transform = 'scale(1)'; 
+            });
+          });
+          
         }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper w-screen max-h-[70vh] "
+        modules={[Pagination, Autoplay , Navigation]}
+        className="mySwiper w-full  h-[70vh]  "
       >
-        <SwiperSlide className=" flex items-center justify-center relative mb-[50px]">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative mb-[50px] ">
           <svg
+           
             width="full"
             height="fit-content"
             viewBox="0 0 444 488"
@@ -221,10 +246,10 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full "
-            height="fit-content"
+            height="fit"
             viewBox="0 0 568 588"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -333,7 +358,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full"
             height="fit"
@@ -466,7 +491,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full"
             height="fit-content"
@@ -615,7 +640,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full "
             height="fit"
@@ -727,7 +752,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full"
             height="fit"
@@ -860,7 +885,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full"
             height="fit-content"
@@ -1009,7 +1034,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full "
             height="fit"
@@ -1121,7 +1146,7 @@ export default function PartnersReviewsSwiper() {
             </defs>
           </svg>
         </SwiperSlide>
-        <SwiperSlide className=" flex items-center justify-center relative">
+        <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
             width="full"
             height="fit"

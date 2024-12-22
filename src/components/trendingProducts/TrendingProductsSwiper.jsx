@@ -14,6 +14,7 @@ export default function TrendingProductsSwipe() {
         spaceBetween={10}
         pagination={{
           dynamicBullets:true,
+          
           dynamicMainBullets:3,
           clickable: true,
         }}

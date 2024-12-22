@@ -77,7 +77,7 @@ export const solutionsdata = [
 
         solutionDetail:{
             heading:"Mines Lighting Solution",
-            heroposter:"/images/solutionsImages/minespageposter.png",
+            heroposter:"/images/solutionsImages/airportpageposter.png",
             paraHading:"Illuminating Critical Mining Spaces with Precision and Safety",
             paraText:"Nessa Illumination Technologies specializes in providing high-quality, reliable, and energy-efficient lighting solutions for mines globally. With a focus on both safety and efficiency, our products are designed to meet the demanding lighting requirements of mining facilities, including underground and open-pit operations. At Nessa, we understand the importance of lighting in mining, where precision, visibility, and operational efficiency are paramount. Through advanced research and development, we offer products that not only meet international safety standards but also help mines optimize energy consumption and reduce operational costs.",
             relatedProducts:[
@@ -148,7 +148,7 @@ export const solutionsdata = [
 
         solutionDetail:{
             heading:"Stadium Lighting Solution",
-            heroposter:"/images/solutionsImages/stadiumpageposter.png",
+            heroposter:"/images/solutionsImages/airportpageposter.png",
             paraHading:"Illuminating Stadiums with Precision and Safety",
             paraText:"Nessa Illumination Technologies specializes in providing high-quality, reliable, and energy-efficient lighting solutions for stadiums globally. With a focus on both safety and efficiency, our products are designed to meet the demanding lighting requirements of stadiums, including field, stands, and parking areas. At Nessa, we understand the importance of lighting in stadiums, where precision, visibility, and operational efficiency are paramount. Through advanced research and development, we offer products that not only meet international safety standards but also help stadiums optimize energy consumption and reduce operational costs.",
             relatedProducts:[
@@ -215,7 +215,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Petrol Pump Lighting Solution",
-           heroposter:"/images/solutionsImages/petrolpumppageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Petrol Pumps with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable and energy-efficient lighting solutions for petrol pumps, ensuring safety and visibility for customers and staff.",
            relatedProducts:[
@@ -285,7 +285,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Refinery Lighting Solution",
-           heroposter:"/images/solutionsImages/refinerypageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Refineries with Precision and Safety",
            paraText:"Nessa Illumination Technologies specializes in providing high-quality lighting solutions for refineries, ensuring safety and efficiency in operations.",
            relatedProducts:[
@@ -355,7 +355,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Highway Lighting Solution",
-           heroposter:"/images/solutionsImages/highwaypageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Highways with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for highways, ensuring safety and visibility for drivers.",
            relatedProducts:[
@@ -425,7 +425,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Tunnel Lighting Solution",
-           heroposter:"/images/solutionsImages/tunnelpageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Tunnels with Precision and Safety",
            paraText:"Nessa Illumination Technologies specializes in providing high-quality lighting solutions for tunnels, ensuring safety and visibility for drivers.",
            relatedProducts:[
@@ -495,7 +495,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Rural Area Lighting Solution",
-           heroposter:"/images/solutionsImages/ruralpageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Rural Areas with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for rural areas, ensuring safety and visibility for residents.",
            relatedProducts:[
@@ -565,7 +565,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Ports Lighting Solution",
-           heroposter:"/images/solutionsImages/portslogisticpageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Ports with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for ports, ensuring safety and visibility for operations.",
            relatedProducts:[
@@ -635,7 +635,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Hazardous Area Lighting Solution",
-           heroposter:"/images/solutionsImages/hazardousareapageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Hazardous Areas with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for hazardous areas, ensuring safety and compliance.",
            relatedProducts:[
@@ -705,7 +705,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Thermal Power Plant Lighting Solution",
-           heroposter:"/images/solutionsImages/thermalpowerplantpageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Thermal Power Plants with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for thermal power plants, ensuring safety and efficiency in operations.",
            relatedProducts:[
@@ -775,7 +775,7 @@ export const solutionsdata = [
        link:"",
         solutionDetail:{
            heading:"Solar Park Lighting Solution",
-           heroposter:"/images/solutionsImages/solarparkpageposter.png",
+           heroposter:"/images/solutionsImages/airportpageposter.png",
            paraHading:"Illuminating Solar Parks with Precision and Safety",
            paraText:"Nessa Illumination Technologies provides reliable lighting solutions for solar parks, ensuring safety and efficiency in operations.",
            relatedProducts:[
