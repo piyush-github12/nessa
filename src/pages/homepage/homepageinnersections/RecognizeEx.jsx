@@ -18,7 +18,8 @@ const RecognizeEx = () => {
             Nessa in
             <span className="text-blue-500"> News</span>
           </div>
-          <RecoExSec1 />
+          <RecoExSec1 />  
+          
         </div>
         <div className="w-1/2 max-md:w-full py-[50px]  ">
           <div className=" text-2xl font-semibold leading-snug text-center text-black z-[2] relative">
