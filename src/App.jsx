@@ -8,7 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/contactUs/ContactUs";
 import EsgPolicy from "./pages/esgpolicy/EsgPolicy";
 import AboutUs from "./pages/aboutUs/AboutUs";
-import Privacy from "./pages/privacy/Privacy";
+import Privacy1 from "./pages/privacy1/Privacy1";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/solutions/:type" element={<SolutionDetail />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/privacy" element={<Privacy1 />} />
         <Route path="/esgpolicy" element={<EsgPolicy />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />

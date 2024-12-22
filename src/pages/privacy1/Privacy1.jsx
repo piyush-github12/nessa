@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/header/Navbar'
-import { privacyConfig } from './PrivacyConfig'
+import { privacyConfig } from './Privacy1Config'
 
 
-const Privacy = () => {
+const Privacy1 = () => {
     
   return (
     <div className="min-h-screen bg-white">
@@ -30,4 +30,4 @@ const Privacy = () => {
   )
 }
 
-export default Privacy
+export default Privacy1
