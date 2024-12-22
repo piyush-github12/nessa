@@ -9,6 +9,9 @@ import {
   whoWeAre,
 } from "./AboutUsConfig";
 import { RiLightbulbFlashLine } from "react-icons/ri";
+import ProductAndTestingSwiper from "./ProductAndTestingSwiper";
+import CertificatesSwiper from "./CertificatesSwiper";
+import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersReviewsSwiper";
 
 const AboutUs = () => {
   return (
@@ -73,7 +76,7 @@ const AboutUs = () => {
       </div>
 
       {/* our vision and Mission */}
-      <div className="w-full flex max-md:flex-col min-h-[200px] relative p-[5vw]">
+      <div className="w-full text-xl flex max-md:flex-col min-h-[200px] relative p-[5vw]">
         <div className="w-1/2  max-md:w-full max-md:h-fit flex flex-col items-center gap-5 p-[30px] text-center ">
           <img
             className="h-[200px]"
@@ -183,7 +186,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-[5vw] mt-[50px] gap-20 justify-items-center">
           {nessaEdgeItems.map((item, index) => (
-            <div className=" flex flex-col items-center gap-5 ">
+            <div key={index} className=" flex flex-col items-center gap-5 ">
               <img className="w-[80px] h-[80px]" src={item.img} alt="" />
               <h1 className="text-xl text-center">{item.title}</h1>
             </div>
@@ -219,22 +222,24 @@ const AboutUs = () => {
         </div>
 
         <div className="w-full px-[10vw] mt-[50px]  ">
-
-        {investor.map((investor, i) => (
-          <div className="w-[100%]  mb-[50px]  border border-orange-400 flex max-md:flex-col max-md:items-center rounded-xl  overflow-hidden">
-            <div key={i} className="w-[30%] max-md:w-full ">
-              <img className="h-[300px] max-md:h-[300px] max-md:w-full object-contain" src={investor.img} alt="" />
-            </div>
-            <div className="w-[70%] max-md:w-full p-[30px] flex flex-col justify-center gap-5">
-                <h1 className="font-semibold text-orange-400 text-4xl ">Investor</h1>
+          {investor.map((investor, i) => (
+            <div className="w-[100%]  mb-[50px]  border border-orange-400 flex max-md:flex-col max-md:items-center rounded-xl  overflow-hidden">
+              <div key={i} className="w-[30%] max-md:w-full ">
+                <img
+                  className="h-[300px] max-md:h-[300px] max-md:w-full object-contain"
+                  src={investor.img}
+                  alt=""
+                />
+              </div>
+              <div className="w-[70%] max-md:w-full p-[30px] flex flex-col justify-center gap-5">
+                <h1 className="font-semibold text-orange-400 text-4xl ">
+                  Investor
+                </h1>
                 <h1 className="font-semibold  text-xl ">{investor.member}</h1>
                 <h1 className="text-lg">{investor.detail}</h1>
-
-
+              </div>
             </div>
-          </div>
-        ))}
-
+          ))}
         </div>
       </div>
 
@@ -253,9 +258,53 @@ const AboutUs = () => {
         </div>
 
         <div className="px-[5vw] ">
-          <img className="mt-[50px] " src="/images/aboutUs/customersegment.svg" alt="" />
+          <img
+            className="mt-[50px] "
+            src="/images/aboutUs/customersegment.svg"
+            alt=""
+          />
         </div>
       </div>
+
+      {/* product and testing */}
+      <div className="w-full py-[50px]">
+        <div className=" px-[5vw] text-4xl font-semibold leading-snug text-center text-black z-[2] relative">
+          Product
+          <span className="text-blue-500"> & Testing</span> Facilities
+        </div>
+        <div className="w-full flex justify-center">
+          <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
+        </div>
+        <div className=" ">
+          <ProductAndTestingSwiper />
+        </div>
+      </div>
+      {/*  certificates */}
+      <div className="w-full py-[50px]">
+        <div className=" px-[5vw] text-4xl font-semibold leading-snug text-center text-black z-[2] relative">
+          <span className="text-blue-500"> Certification</span>
+        </div>
+        <div className="w-full flex justify-center">
+          <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
+        </div>
+        <CertificatesSwiper />
+      </div>
+
+      <div className="w-full px-[5vw] py-[100px] flex max-md:flex-col">
+        <div className=" px-[5vw] text-5xl font-semibold leading-snug text-center text-black z-[2] relative">
+          Quality <br />
+          <span className="text-blue-500"> Policy</span>
+        </div>
+        <div
+          className="min-h-[100px] w-[5px] max-md:hidden bg-blue-500 " 
+        ></div>
+        <div className=" px-[5vw] text-xl flex items-center justify-center text-black z-[2] relative">
+         <h1> To be World Class supplier of <span className="text-blue-500"> LED Lights, Solar LED Lights and Drivers, </span> which meet the Customer’s expectations through Teamwork and continuous <span className="text-blue-500">Improvement and Innovation.</span> </h1>
+          
+        </div>
+      </div>
+
+      <PartnersReviewsSwiper/>
     </div>
   );
 };

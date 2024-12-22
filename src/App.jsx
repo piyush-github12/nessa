@@ -6,9 +6,9 @@ import SolutionDetail from "./pages/solutionDetail/SolutionDetail";
 import Terms from "./pages/terms/Terms";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/contactUs/ContactUs";
-import Privacy from "./pages/privacy/Privacy";
 import EsgPolicy from "./pages/esgpolicy/EsgPolicy";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Privacy from "./pages/privacy/Privacy";
 
 const App = () => {
   return (

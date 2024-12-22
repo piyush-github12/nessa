@@ -99,7 +99,7 @@ export default function PartnersReviewsSwiper() {
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative mb-[50px] ">
           <svg
            
-            width="full"
+            width="100%"
             height="fit-content"
             viewBox="0 0 444 488"
             fill="none"
@@ -360,7 +360,7 @@ export default function PartnersReviewsSwiper() {
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
-            width="full"
+            width="100%"
             height="fit"
             viewBox="0 0 444 488"
             fill="none"
@@ -493,7 +493,7 @@ export default function PartnersReviewsSwiper() {
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
-            width="full"
+            width="100%"
             height="fit-content"
             viewBox="0 0 444 488"
             fill="none"
@@ -754,7 +754,7 @@ export default function PartnersReviewsSwiper() {
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
-            width="full"
+            width="100%"
             height="fit"
             viewBox="0 0 444 488"
             fill="none"
@@ -887,7 +887,7 @@ export default function PartnersReviewsSwiper() {
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
-            width="full"
+            width="100%"
             height="fit-content"
             viewBox="0 0 444 488"
             fill="none"
@@ -1148,7 +1148,7 @@ export default function PartnersReviewsSwiper() {
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer  flex items-center justify-center relative">
           <svg
-            width="full"
+            width="100%"
             height="fit"
             viewBox="0 0 444 488"
             fill="none"

@@ -87,3 +87,38 @@ export const investor=[
     
 ]
 
+export const productAndTesting = [
+    {
+        img:"./images/aboutUs/ucdepartment.png",
+        title:"UC Department",  
+    },
+    {
+        img:"./images/aboutUs/burn.png",
+        title:"Burn Testing",  
+    },
+    {
+        img:"./images/aboutUs/interactionsphere.png",
+        title:"Interacting Sphere",  
+    },
+    {
+        img:"./images/aboutUs/ucdepartment.png",
+        title:"UC Department",  
+    },
+    {
+        img:"./images/aboutUs/burn.png",
+        title:"Burn Testing",  
+    },
+    {
+        img:"./images/aboutUs/interactionsphere.png",
+        title:"Interacting Sphere",  
+    },
+]
+
+export const certificate =[
+    "./images/aboutUs/certificate1.png",
+    "./images/aboutUs/certificate1.png",
+    "./images/aboutUs/certificate1.png",
+    "./images/aboutUs/certificate1.png",
+    "./images/aboutUs/certificate1.png",
+    "./images/aboutUs/certificate1.png",
+]
