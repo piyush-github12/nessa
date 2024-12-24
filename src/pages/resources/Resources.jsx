@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../components/header/Navbar";
 import { nessaCatalogs } from "./ResourcesConfig";
-import InsightsResources from "./Insites";
 
 export const Resources = () => {
   return (
@@ -19,7 +18,7 @@ export const Resources = () => {
         </h1>
       </div>
 
-        {/* download nessa catalogus */}
+      {/* download nessa catalogus */}
       <div className="w-full min-h-[300px] relative py-[50px] px-[5vw]">
         <div className="absolute w-[250px] h-[250px] bg-[var(--light-blue)] opacity-30 left-[-7vw] top-[-3vw]   rounded-full z-[-1]"></div>
 
@@ -37,25 +36,19 @@ export const Resources = () => {
       </div>
 
       <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full justify-items-center mt-[50px] ">
-        {nessaCatalogs.map((item , index)=>(
-            <div key={index} className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center ">
-            <img
-              className="bg-gray-400 h-[80%] "
-              src={item.img}
-              alt=""
-            />
-  
+        {nessaCatalogs.map((item, index) => (
+          <div
+            key={index}
+            className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center "
+          >
+            <img className="bg-gray-400 h-[80%] " src={item.img} alt="" />
+
             <div className="bg-blue-500 w-full text-center py-[10px] mt-[20px] rounded-md text-white">
               {item.btntext}
             </div>
           </div>
         ))}
-       
-      </div> 
-
-        <InsightsResources/>
-
-
+      </div>
     </div>
   );
 };
