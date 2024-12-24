@@ -120,7 +120,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="flex justify-between mt-5 text-black  gap-5">
-              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-300 rounded-lg">
+              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-100 rounded-lg">
                 <h1 className="font-semibold text-lg mb-2">Domestic inquiry</h1>
                 <div className="flex items-center gap-2">
                   <MdCall />
@@ -131,7 +131,7 @@ const ContactUs = () => {
                   <h1>sales@nessa.in</h1>
                 </div>
               </div>
-              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-300 rounded-lg">
+              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-100 rounded-lg">
                 <h1 className="font-semibold text-lg mb-2">
                   International inquiry
                 </h1>
@@ -146,7 +146,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="flex justify-between mt-5 text-black  gap-5">
-              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-300 rounded-lg">
+              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-100 rounded-lg">
                 <h1 className="font-semibold text-lg mb-2">Service inquiry</h1>
                 <div className="flex items-center gap-2">
                   <MdCall />
@@ -157,7 +157,7 @@ const ContactUs = () => {
                   <h1>sales@nessa.in</h1>
                 </div>
               </div>
-              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-300 rounded-lg">
+              <div className="w-1/2 min-h-[100px] p-[20px] bg-blue-100 rounded-lg">
                 <h1 className="font-semibold text-lg mb-2">Career inquiry</h1>
                 <div className="flex items-center gap-2">
                   <MdCall />
@@ -169,7 +169,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full mt-5 flex flex-col text-black items-center justify-center  min-h-[100px] p-[20px] bg-blue-300 rounded-lg">
+            <div className="w-full mt-5 flex flex-col text-black items-center justify-center  min-h-[100px] p-[20px] bg-blue-100 rounded-lg">
               <h1 className="font-semibold text-lg mb-2">CSR inquiry</h1>
               <div className="flex items-center gap-2">
                 <MdCall />

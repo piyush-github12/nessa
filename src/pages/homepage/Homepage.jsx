@@ -1,16 +1,13 @@
-import React from 'react'
-import Navbar from '../../components/header/Navbar'
+import React from "react";
+import Navbar from "../../components/header/Navbar";
 import { GiElectric } from "react-icons/gi";
-import { countries, lightingSolution } from './homepageConfig';
-import { Link } from 'react-router-dom';
-import { ProductRange } from './homepageinnersections/ProductRange';
+import { countries, lightingSolution } from "./homepageConfig";
+import { Link } from "react-router-dom";
+import { ProductRange } from "./homepageinnersections/ProductRange";
 import { RiLightbulbFlashLine } from "react-icons/ri";
-import RecognizeEx from './homepageinnersections/RecognizeEx';
-import InsitesSwiper from './homepageinnersections/InsitesSwiper';
-import PartnersReviewsSwiper from '../../components/partnerreviews/PartnersReviewsSwiper';
-
-
-
+import RecognizeEx from "./homepageinnersections/RecognizeEx";
+import InsitesSwiper from "./homepageinnersections/InsitesSwiper";
+import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersReviewsSwiper";
 
 const Homepage = () => {
   return (
@@ -426,7 +423,7 @@ const Homepage = () => {
       </div>
 
       {/* Partners Reviews Swiper */}
-      <PartnersReviewsSwiper/>
+      <PartnersReviewsSwiper />
 
       {/* recognized excellence */}
       <RecognizeEx />
@@ -437,15 +434,12 @@ const Homepage = () => {
         style={{ background: "linear-gradient(to bottom, #f7faff, #deeefc)" }}
       >
         <div className=" text-4xl py-[50px] font-semibold leading-snug text-center text-black z-[2] relative">
-        Insights & 
-          <span className="text-blue-500"> Resources</span> 
+          Insights &<span className="text-blue-500"> Resources</span>
         </div>
-        <InsitesSwiper/>
+        <InsitesSwiper />
       </div>
-
-
     </div>
   );
-}
+};
 
-export default Homepage
+export default Homepage;

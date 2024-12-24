@@ -105,7 +105,6 @@ const products = generateFakeProducts();
 const ITEMS_PER_PAGE = 12;
 
 
-
 export default function ShowProducts() {
   const [currentPage, setCurrentPage] = useState(1);
   const [expandedCategories, setExpandedCategories] = useState({
