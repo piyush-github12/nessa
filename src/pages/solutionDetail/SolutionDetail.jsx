@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../../components/header/Navbar";
 import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersReviewsSwiper";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { solutionsdata } from "../solutions/SolutionsConfig";
+import { caseStudiesdata } from "./SolutionDetailConfig";
 
 const SolutionDetail = () => {
   const { type } = useParams(); // Extract 'type' parameter from the URL
@@ -121,39 +122,19 @@ const SolutionDetail = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full justify-items-center mt-[50px] ">
-        <div className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center ">
-          <img
-            className="bg-gray-400 h-[80%] "
-            src="/images/solutionsImages/casestudy1.png"
-            alt=""
-          />
-
-          <div className="bg-blue-500 w-full text-center py-[10px] mt-[20px] rounded-md text-white">
-            Download
+      {caseStudiesdata.map((item , index)=>(
+            <div key={index} className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center ">
+            <img
+              className="bg-gray-400 h-[80%] "
+              src={item.img}
+              alt=""
+            />
+  
+            <Link   className="bg-blue-500 w-full text-center py-[10px] mt-[20px] rounded-md text-white">
+              Download
+            </Link>
           </div>
-        </div>
-        <div className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center ">
-          <img
-            className="bg-gray-400 h-[80%] "
-            src="/images/solutionsImages/casestudy2.png"
-            alt=""
-          />
-
-          <div className="bg-blue-500 w-full text-center py-[10px] mt-[20px] rounded-md text-white">
-            Download
-          </div>
-        </div>
-        <div className=" w-[20vw] max-md:w-[40vw] max-sm:w-[90%] max-sm:mb-10 h-[30vw] max-md:h-fit  flex flex-col items-center ">
-          <img
-            className="bg-gray-400 h-[80%] "
-            src="/images/solutionsImages/casestudy3.png"
-            alt=""
-          />
-
-          <div className="bg-blue-500 w-full text-center py-[10px] mt-[20px] rounded-md text-white">
-            Download
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* our clients */}

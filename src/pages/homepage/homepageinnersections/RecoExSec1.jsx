@@ -8,6 +8,7 @@ const RecoExSec1Wrapper = styled.div`
   .swiper {
     width: 100%;
     height: 500px;
+      
   }
 
   .swiper-slide {

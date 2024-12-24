@@ -9,6 +9,9 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import EsgPolicy from "./pages/esgpolicy/EsgPolicy";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import Privacy1 from "./pages/privacy1/Privacy1";
+import Support from "./pages/support/Support";
+import { Resources } from "./pages/resources/Resources";
+import { Allproducts } from "./pages/allproducts/Allproducts";
 
 const App = () => {
   return (
@@ -23,6 +26,10 @@ const App = () => {
         <Route path="/esgpolicy" element={<EsgPolicy />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/allproducts" element={<Allproducts />} />
+        
       </Routes>
     </>
   );

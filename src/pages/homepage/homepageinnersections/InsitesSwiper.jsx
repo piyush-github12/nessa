@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 const slideData = [
   {
@@ -64,6 +65,9 @@ export default function InsitesSwiper() {
         dynamicBullets:true,
         clickable: true,
       }}
+      navigation={{
+        clickable: true,
+      }}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -91,8 +95,9 @@ export default function InsitesSwiper() {
           swiper.autoplay.start(); // Resume autoplay on mouse leave
         });
       }}
-      modules={[Pagination, Autoplay]}
+      modules={[Pagination, Autoplay , Navigation]}
       className="mySwiper "
+      style={{paddingLeft:"50px", paddingRight:"50px"}}
     >
       {slideData.map((slide, index) => (
         <SwiperSlide key={index} className='mb-[50px]'>

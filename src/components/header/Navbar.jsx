@@ -60,10 +60,10 @@ const Navbar = () => {
               Solutions
               <IoIosArrowDown className="w-4 h-4 text-black" />
             </Link>
-            <div className="text-black flex items-center gap-1">
+            <Link to="/allproducts" className="text-black flex items-center gap-1">
               Products
               <IoIosArrowDown className="w-4 h-4 text-black" />
-            </div>
+            </Link>
             <div className="text-black flex items-center gap-1">
               Corporates
               <IoIosArrowDown className="w-4 h-4 text-black" />

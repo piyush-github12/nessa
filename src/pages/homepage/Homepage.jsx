@@ -433,7 +433,7 @@ const Homepage = () => {
 
       {/* insights and resources */}
       <div
-        className="py-[50px] px-[5vw] mt-[50px]"
+        className="py-[50px]  mt-[50px]"
         style={{ background: "linear-gradient(to bottom, #f7faff, #deeefc)" }}
       >
         <div className=" text-4xl py-[50px] font-semibold leading-snug text-center text-black z-[2] relative">
