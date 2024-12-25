@@ -108,7 +108,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`xl:hidden fixed top-[132px] left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out transform ${
+          className={`xl:hidden fixed top-[162px] left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out transform ${
             isMenuOpen
               ? "translate-y-0 opacity-100 visible"
               : "translate-y-[-100%] opacity-0 invisible"

@@ -13,6 +13,7 @@ import Support from "./pages/support/Support";
 import { Resources } from "./pages/resources/Resources";
 import { Allproducts } from "./pages/allproducts/Allproducts";
 import Product from "./pages/product/Product";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/support" element={<Support />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/navigation" element={<Navigation />} />
         
       </Routes>
     </>
