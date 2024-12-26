@@ -55,7 +55,7 @@ export const countries =[
     },
     {
         country: "Oman",
-        flag: "./images/homepageimages/oman.png",
+        flag: "./images/homepageimages/Oman.png",
     },
     {
         country: "Bangladesh",
