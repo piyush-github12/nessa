@@ -56,9 +56,9 @@ const Homepage = () => {
             </p>
 
             {/* discover Button */}
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+            <Link to='/solutions'  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
               Discover All Solutions
-            </button>
+            </Link>
           </div>
         </div>
       </div>

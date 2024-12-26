@@ -257,7 +257,7 @@ const AboutUs = () => {
           <div className="flex relative shrink-0 mt-9 h-2.5 bg-[#b3d6f6] rounded-[50px] w-[51px]" />
         </div>
 
-        <div className="px-[5vw] ">
+        <div className="px-[5vw] w-full flex items-center justify-center">
           <img
             className="mt-[50px] "
             src="/images/aboutUs/customersegment.svg"
