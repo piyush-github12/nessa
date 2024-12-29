@@ -14,12 +14,15 @@ import { Resources } from "./pages/resources/Resources";
 import { Allproducts } from "./pages/allproducts/Allproducts";
 import Product from "./pages/product/Product";
 import Navigation from "./components/Navigation";
+import { Projects } from "./pages/projects/Projects";
+import { ValueAddedServices } from "./pages/valueAddedServices/ValueAddedServices";
 
 const App = () => {
   return (
     <>
       <ScrollToTop />
       <Routes>
+        <Route path="/navigation" element={<Navigation />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/allproducts" element={<Allproducts />} />
         <Route path="/product" element={<Product />} />
@@ -32,7 +35,9 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/support" element={<Support />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/navigation" element={<Navigation />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/valueAddedServices" element={<ValueAddedServices />} />
+
         
       </Routes>
     </>
