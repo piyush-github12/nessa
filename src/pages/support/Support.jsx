@@ -3,6 +3,7 @@ import Navbar from "../../components/header/Navbar";
 import { MdCall, MdEmail } from "react-icons/md";
 import { nessaServices } from "./SupportConfig";
 import styled from "styled-components";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 const StyleWrapper = styled.div`
   input[type="file"]::file-selector-button {
@@ -90,6 +91,7 @@ const Support = () => {
     <StyleWrapper>
       <div className="w-full overflow-hidden">
         <Navbar />
+        <SideComponent/>
 
         <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center justify-center">
           <img

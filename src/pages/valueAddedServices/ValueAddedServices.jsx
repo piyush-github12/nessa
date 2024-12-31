@@ -7,11 +7,13 @@ import {
   ourValuePreposition,
 } from "./ValueAddedServicesConfig";
 import { RiLightbulbFlashLine } from "react-icons/ri";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 export const ValueAddedServices = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
+      <SideComponent/>
 
       <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-center ">
         <img

@@ -3,12 +3,13 @@ import Navbar from "../../components/header/Navbar";
 import { solutionsdata } from "./SolutionsConfig";
 import { Link } from "react-router-dom";
 import TrendingProductsSwipe from "../../components/trendingProducts/TrendingProductsSwiper";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 const Solutions = () => {
   return (
     <div className="w-full overflow-hidden ">
       <Navbar />
-
+      <SideComponent/>
       <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-start ">
         <img
           className="w-full h-full object-cover absolute "

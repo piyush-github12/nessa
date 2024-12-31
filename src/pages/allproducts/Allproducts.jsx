@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../../components/header/Navbar'
 import ShowProducts from './ShowProducts'
+import SideComponent from '../../components/sideComponent/SideComponent'
 
 export const Allproducts = () => {
   return (
     <div className='overflow-hidden'>
       
       <Navbar />
+      <SideComponent />
 
         <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-center ">
           <img

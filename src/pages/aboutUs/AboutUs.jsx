@@ -12,12 +12,13 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 import ProductAndTestingSwiper from "./ProductAndTestingSwiper";
 import CertificatesSwiper from "./CertificatesSwiper";
 import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersReviewsSwiper";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 const AboutUs = () => {
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
-
+      <SideComponent />
       <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-start ">
         <img
           className="w-full h-full object-cover absolute "

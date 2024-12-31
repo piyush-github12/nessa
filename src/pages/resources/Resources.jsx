@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 import ResourcesInsites from "./ResourcesInsites";
 import Media from "./Media";
 import hero from "../../assets/images/allProductsimages/hero.png";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 export const Resources = () => {
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
+      <SideComponent/>
 
       <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-start ">
         <img

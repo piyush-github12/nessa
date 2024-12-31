@@ -8,6 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa";
 import styled from "styled-components";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 const StyleWrapper = styled.div`
   input[type="file"]::file-selector-button {
@@ -92,6 +93,7 @@ const ContactUs = () => {
     <StyleWrapper>
       <div className="w-full overflow-hidden">
         <Navbar />
+        <SideComponent/>
 
         <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-center ">
           <img

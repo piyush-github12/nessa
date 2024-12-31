@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/header/Navbar'
 import { privacyConfig } from './Privacy1Config'
+import SideComponent from '../../components/sideComponent/SideComponent'
 
 
 const Privacy1 = () => {
@@ -8,7 +9,8 @@ const Privacy1 = () => {
   return (
     <div className="min-h-screen bg-white">
     {/* Header */}
-    <Navbar/>
+  <Navbar />  
+  <SideComponent/>
     <div className="bg-blue-200 text-black  py-20"> 
       <h1 className="text-2xl font-semibold text-center">{privacyConfig.title}</h1>
     </div>

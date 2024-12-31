@@ -4,6 +4,7 @@ import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersRevie
 import { Link, useParams } from "react-router-dom";
 import { solutionsdata } from "../solutions/SolutionsConfig";
 import { caseStudiesdata } from "./SolutionDetailConfig";
+import SideComponent from "../../components/sideComponent/SideComponent";
 
 const SolutionDetail = () => {
   const { type } = useParams(); // Extract 'type' parameter from the URL
@@ -16,6 +17,7 @@ const SolutionDetail = () => {
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
+      <SideComponent/>
 
       <div className="w-full h-[300px] max-sm:h-[200px] relative flex items-center  justify-start ">
         <img

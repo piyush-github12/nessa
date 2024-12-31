@@ -8,14 +8,16 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 import RecognizeEx from "./homepageinnersections/RecognizeEx";
 import InsitesSwiper from "./homepageinnersections/InsitesSwiper";
 import PartnersReviewsSwiper from "../../components/partnerreviews/PartnersReviewsSwiper";
+import  SideComponent  from "../../components/sideComponent/SideComponent";
 
 const Homepage = () => {
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
-
+      <SideComponent />
       {/* Hero Content  */}
       <div className="w-full h-[70vh] relative">
+
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             className="w-full h-full object-cover"
@@ -56,7 +58,10 @@ const Homepage = () => {
             </p>
 
             {/* discover Button */}
-            <Link to='/solutions'  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+            <Link
+              to="/solutions"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+            >
               Discover All Solutions
             </Link>
           </div>
